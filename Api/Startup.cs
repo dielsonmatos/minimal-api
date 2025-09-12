@@ -24,19 +24,9 @@ public class Startup
     public Startup(IConfiguration configuration)
     {
         Configuration = configuration;
-        key = Configuration.GetSection("Jwt")["Key"] ?? "";  // Aqui pegamos o valor de "Key" da seção "Jwt"
+        key = Configuration.GetSection("Jwt")["Key"] ?? "";
     }
-    // public class Startup
-    // {
-    //     public class Startup(IConfiguration configuration)
-    //     {
-    //         Configuration = configuration;
-    //         key = Configuration?.GetSection("Jwt")?.ToString() ?? "";
-    //     }
-
-    // private string key = "";
-    // public IConfiguration Configuration { get; set; } = default!;
-
+    
     public void ConfigureServices(IServiceCollection services)
     {
         services.AddAuthentication(option =>
