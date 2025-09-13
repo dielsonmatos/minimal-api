@@ -1,4 +1,4 @@
-# Projeto Cadastro de Veículos e Usuários - .NET com Minimal API
+# Projeto Cadastro de Veículos e Usuários - ASP.NET com Minimal API
 
 ## Funcionalidades
 
